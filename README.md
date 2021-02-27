@@ -40,7 +40,7 @@ Loading the saved model in 'tf' is the recommended option. After finishing the t
 7 - Bool: 1 if second leg has contact, else 0  
 
 **Rewards:**<br />
-Moving from the top of the screen to the landing pad gives a scalar reward between 100 and 140 (with 0 velocity)  
+Moving from the top of the screen to the landing pad with (0 velocity) gives a scalar reward between 100 and 140    
 Negative reward if the lander moves away from the landing pad   
 If the lander crashes, a scalar reward of -100 is given  
 If the lander comes to rest, a scalar reward of 100 is given  
