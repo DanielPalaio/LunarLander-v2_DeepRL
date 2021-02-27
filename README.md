@@ -68,14 +68,14 @@ Average reward of 200.0 over 100 consecutive trials
 
 | Parameter | Value |
 |--|--|
-| Number of episodes | 1500 |
-| Learning rate  | 0.001 |
+| Number of episodes | 300 |
+| Learning rate  | 0.00075 |
 | Discount Factor | 0.99 |
 | Epsilon | 1.0 |
 | Batch size | 64 |
-| TargetNet update rate (steps) | 100 |
-| Actions (MountainCar-v0 env) | 3 |
-| States (MountainCar-v0 env) | 2 |
+| TargetNet update rate (steps) | 120 |
+| Actions (MountainCar-v0 env) | 4 |
+| States (MountainCar-v0 env) | 8 |
 
 </td><td>
 
@@ -83,14 +83,14 @@ Average reward of 200.0 over 100 consecutive trials
 |--|--|
 | Number of episodes | 100 |
 | Epsilon | 0.01 |
-| Actions (MountainCar-v0 env) | 3 |
-| States (MountainCar-v0 env) | 2 |
+| Actions (MountainCar-v0 env) | 4 |
+| States (MountainCar-v0 env) | 8 |
 
 </td></tr> </table>
 
 <p align="center">
-  <img src="DQN/MountainCar_Train.png" width="400" height="250" />
-  <img src="DQN/MountainCar_Test.png" width="400" height="250"/>
+  <img src="DQN/LunarLander_Train.png" width="400" height="250" />
+  <img src="DQN/LunarLander_Test.png" width="400" height="250"/>
 </p>
 
 <p align="center">
