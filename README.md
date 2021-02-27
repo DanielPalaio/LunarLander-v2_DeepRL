@@ -143,6 +143,45 @@ Average reward of 200.0 over 100 consecutive trials
 
 > **Network model used for testing:** 'saved_networks/duelingdqn_model123' ('tf' model, also available in .h5)  
 
-![D3QN_Solved](https://user-images.githubusercontent.com/79323290/109398984-e8278b80-7937-11eb-85a6-fae3285c212a.gif)
-![D3QN_Unsolved](https://user-images.githubusercontent.com/79323290/109398985-e8c02200-7937-11eb-88f2-e7831ee2e8e0.gif)
+# Dueling Double DQN (D3QN)
+<p align="center">
+  <img width="950" height="500" src="https://user-images.githubusercontent.com/79323290/109341984-1e470b80-7863-11eb-9c5b-33a967d6bdd9.png">
+</p>
 
+<table>
+<tr><th> Train </th><th> Test </th></tr>
+<tr><td>
+
+| Parameter | Value |
+|--|--|
+| Number of episodes | 350 |
+| Learning rate  | 0.00075 |
+| Discount Factor | 0.99 |
+| Epsilon | 1.0 |
+| Batch size | 64 |
+| TargetNet update rate (steps) | 120 |
+| Actions (MountainCar-v0 env) | 4 |
+| States (MountainCar-v0 env) | 8 |
+
+</td><td>
+
+| Parameter | Value |
+|--|--|
+| Number of episodes | 100 |
+| Epsilon | 0.01 |
+| Actions (MountainCar-v0 env) | 4 |
+| States (MountainCar-v0 env) | 8 |
+
+</td></tr> </table>
+
+<p align="center">
+  <img src="D3QN/LunarLander_Train.png" width="400" height="250" />
+  <img src="D3QN/LunarLander_Test.png" width="400" height="250"/>
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/79323290/109398985-e8c02200-7937-11eb-88f2-e7831ee2e8e0.gif" width="400" height="250" />
+  <img src="https://user-images.githubusercontent.com/79323290/109398984-e8278b80-7937-11eb-85a6-fae3285c212a.gif" width="400" height="250" />
+</p>
+
+> **Network model used for testing:** 'saved_networks/d3qn_model5' ('tf' model, also available in .h5)  
