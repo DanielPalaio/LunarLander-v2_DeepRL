@@ -17,7 +17,7 @@ Packages | requirements.txt
 
 # :warning: **WARNING** :warning:  
 The training generates a [.txt file](DQN/saved_networks.txt) that tracks the saves of the network models (in 'tf' anf .h5 formats) that achieve the solved requirement of the environment. Additionally, an overview image (graph) of the training procedure is created.   
-Keep in mind that to perform the training process, the .txt, .png, and directory names must be change. Otherwise, information of previous trainings  will get overwritten, and lost.  
+Keep in mind that to perform several training processes, the .txt, .png, and directory names must be change. Otherwise, information of previous trainings will get overwritten, and lost.  
 
 Regarding testing, if you choose to load the .h5 model, a 5 episode training is done to initialize/build the keras.model network. Thus, the warnings above mentioned are also appliable to this situation.   
 Loading the saved model in 'tf' is the recommended option. After finishing the testing, an overview image (graph) of the training procedure is also generated.
