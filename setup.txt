@@ -1,0 +1,29 @@
+
+1. Install Anaconda 
+   https://www.anaconda.com/products/individual#windows
+
+2. Open Windows cmd 
+	conda update conda
+	conda install numba
+	conda install cudatoolkit
+
+3. Update GPU drivers 
+   https://www.nvidia.com/Download/index.aspx?lang=en-us
+
+4. Download and install cuda 
+   https://developer.nvidia.com/cuda-downloads?fbclid=IwAR0d-IKCgCsGXt-1O34ZweibPNPX4lzzh6-n_L2K2flSOntTYrQ3ZM06IN0&target_os=Windows&target_arch=x86_64&target_version=10&target_type=exelocal
+
+5. Download and install cuDNN
+   https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html
+	Copy <installpath>\cuda\bin\cudnn*.dll to C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\vx.x\bin.
+	Copy <installpath>\cuda\include\cudnn*.h to C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\vx.x\include.
+	Copy <installpath>\cuda\lib\x64\cudnn*.lib to C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\vx.x\lib\x64.
+
+4. Open Anaconda prompt 
+   where python
+   	C:\Users\User\anaconda3\python.exe
+	C:\Users\User\AppData\Local\Programs\Python\Python38\python.exe
+	C:\Users\User\AppData\Local\Microsoft\WindowsApps\python.exe	
+
+5. In Pycharm, add Conda Environment to the python interpreter 
+   File-> Settings -> Python Interpreter -> ⚙️ -> Add - > Conda Environment -> Existing environment -> <No interpreter> ... -> C:\Users\User\anaconda3\python.exe
