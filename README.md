@@ -61,3 +61,41 @@ Average reward of 200.0 over 100 consecutive trials
   <img width="950" height="500" src="https://user-images.githubusercontent.com/79323290/109340337-cb6c5480-7860-11eb-9411-42b8e0d5941d.png">
 </p>
        
+
+<table>
+<tr><th> Train </th><th> Test </th></tr>
+<tr><td>
+
+| Parameter | Value |
+|--|--|
+| Number of episodes | 1500 |
+| Learning rate  | 0.001 |
+| Discount Factor | 0.99 |
+| Epsilon | 1.0 |
+| Batch size | 64 |
+| TargetNet update rate (steps) | 100 |
+| Actions (MountainCar-v0 env) | 3 |
+| States (MountainCar-v0 env) | 2 |
+
+</td><td>
+
+| Parameter | Value |
+|--|--|
+| Number of episodes | 100 |
+| Epsilon | 0.01 |
+| Actions (MountainCar-v0 env) | 3 |
+| States (MountainCar-v0 env) | 2 |
+
+</td></tr> </table>
+
+<p align="center">
+  <img src="DQN/MountainCar_Train.png" width="400" height="250" />
+  <img src="DQN/MountainCar_Test.png" width="400" height="250"/>
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/79323290/109392669-5a3aa900-7915-11eb-8bda-c4b3f1525713.gif" width="400" height="250" />
+  <img src="https://user-images.githubusercontent.com/79323290/109392675-5b6bd600-7915-11eb-8c98-411ff05ab74f.gif" width="400" height="250"/>
+</p>
+
+> **Network model used for testing:** 'saved_networks/dqn_model104' ('tf' model, also available in .h5)  
