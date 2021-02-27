@@ -111,7 +111,7 @@ Average reward of 200.0 over 100 consecutive trials
 
 | Parameter | Value |
 |--|--|
-| Number of episodes | 300 |
+| Number of episodes | 500 |
 | Learning rate  | 0.00075 |
 | Discount Factor | 0.99 |
 | Epsilon | 1.0 |
@@ -141,7 +141,7 @@ Average reward of 200.0 over 100 consecutive trials
   <img src="https://user-images.githubusercontent.com/79323290/109398988-e9f14f00-7937-11eb-9519-387642b61489.gif" width="400" height="250" />
 </p>
 
-> **Network model used for testing:** 'saved_networks/duelingdqn_model172' ('tf' model, also available in .h5)  
+> **Network model used for testing:** 'saved_networks/duelingdqn_model123' ('tf' model, also available in .h5)  
 
 ![D3QN_Solved](https://user-images.githubusercontent.com/79323290/109398984-e8278b80-7937-11eb-85a6-fae3285c212a.gif)
 ![D3QN_Unsolved](https://user-images.githubusercontent.com/79323290/109398985-e8c02200-7937-11eb-88f2-e7831ee2e8e0.gif)
