@@ -94,8 +94,55 @@ Average reward of 200.0 over 100 consecutive trials
 </p>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/79323290/109392669-5a3aa900-7915-11eb-8bda-c4b3f1525713.gif" width="400" height="250" />
-  <img src="https://user-images.githubusercontent.com/79323290/109392675-5b6bd600-7915-11eb-8c98-411ff05ab74f.gif" width="400" height="250"/>
+  <img src="https://user-images.githubusercontent.com/79323290/109398987-e958b880-7937-11eb-8025-e29c6f957ce8.gif" width="400" height="250" />
+  <img src="https://user-images.githubusercontent.com/79323290/109398986-e958b880-7937-11eb-951e-05eea415e7eb.gif" width="400" height="250"/>
 </p>
 
 > **Network model used for testing:** 'saved_networks/dqn_model104' ('tf' model, also available in .h5)  
+
+# Dueling DQN
+<p align="center">
+  <img width="950" height="500" src="https://user-images.githubusercontent.com/79323290/109340340-cc9d8180-7860-11eb-9011-1ea05ef7fc75.png">
+</p>
+
+<table>
+<tr><th> Train </th><th> Test </th></tr>
+<tr><td>
+
+| Parameter | Value |
+|--|--|
+| Number of episodes | 300 |
+| Learning rate  | 0.00075 |
+| Discount Factor | 0.99 |
+| Epsilon | 1.0 |
+| Batch size | 64 |
+| TargetNet update rate (steps) | 120 |
+| Actions (MountainCar-v0 env) | 4 |
+| States (MountainCar-v0 env) | 8 |
+
+</td><td>
+
+| Parameter | Value |
+|--|--|
+| Number of episodes | 100 |
+| Epsilon | 0.01 |
+| Actions (MountainCar-v0 env) | 4 |
+| States (MountainCar-v0 env) | 8 |
+
+</td></tr> </table>
+
+<p align="center">
+  <img src="DuelingDQN/LunarLander_Train.png" width="400" height="250" />
+  <img src="DuelingDQN/LunarLander_Test.png" width="400" height="250"/>
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/79323290/109398989-e9f14f00-7937-11eb-8698-ec4bb82dcde7.gif" width="400" height="250" />
+  <img src="https://user-images.githubusercontent.com/79323290/109398988-e9f14f00-7937-11eb-9519-387642b61489.gif" width="400" height="250" />
+</p>
+
+> **Network model used for testing:** 'saved_networks/duelingdqn_model172' ('tf' model, also available in .h5)  
+
+![D3QN_Solved](https://user-images.githubusercontent.com/79323290/109398984-e8278b80-7937-11eb-85a6-fae3285c212a.gif)
+![D3QN_Unsolved](https://user-images.githubusercontent.com/79323290/109398985-e8c02200-7937-11eb-88f2-e7831ee2e8e0.gif)
+
