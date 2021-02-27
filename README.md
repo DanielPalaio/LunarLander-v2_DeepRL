@@ -27,7 +27,7 @@ Loading the saved model in 'tf' is the recommended option. After finishing the t
 0 - No action  
 1 - Fire left engine  
 2 - Fire main engine  
-3 - Fire left engine  
+3 - Fire right engine  
 
 **States:**<br />
 0 - Lander horizontal coordinate  
