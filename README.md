@@ -51,7 +51,7 @@ Firing the side engines corresponds to a scalar reward of -0.3 per frame
 **Episode termination:**<br />
 Lander crashes  
 Lander comes to rest  
-Episode length is greater than 400  
+Episode length greater than 400  
 
 **Solved Requirement:**<br />
 Average reward of 200.0 over 100 consecutive trials
