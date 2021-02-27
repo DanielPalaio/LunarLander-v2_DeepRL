@@ -16,7 +16,7 @@ Packages | requirements.txt
 > pip install -r requirements.txt
 
 # :warning: **WARNING** :warning:  
-The training generates a [.txt file](DQN/saved_networks.txt) that tracks the saves of the network models, in 'tf' anf .h5, that achieve the solved requirements of the environment. Additionally, an overview image (graph) of the training procedure is created.   
+The training generates a [.txt file](DQN/saved_networks.txt) that tracks the saves of the network models (in 'tf' anf .h5 formats) that achieve the solved requirement of the environment. Additionally, an overview image (graph) of the training procedure is created.   
 Keep in mind that to perform the training process, the .txt, .png, and directory names must be change. Otherwise, information of previous trainings  will get overwritten, and lost.  
 
 Regarding testing, if you choose to load the .h5 model, a 5 episode training is done to initialize/build the keras.model network. Thus, the warnings above mentioned are also appliable to this situation.   
