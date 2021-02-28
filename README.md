@@ -42,13 +42,13 @@ Loading the saved model in 'tf' is the recommended option. After finishing the t
 7 - Bool: 1 if second leg has contact, else 0  
 
 **Rewards:**<br />
-Moving from the top of the screen to the landing pad gives a scalar reward between 100 and 140    
+Moving from the top of the screen to the landing pad gives a scalar reward between (100-140)    
 Negative reward if the lander moves away from the landing pad   
-If the lander crashes, a scalar reward of -100 is given  
-If the lander comes to rest, a scalar reward of 100 is given  
-Each leg with ground contact corresponds to a scalar reward of 10  
-Firing the main engine corresponds to a scalar reward of -0.3 per frame   
-Firing the side engines corresponds to a scalar reward of -0.3 per frame   
+If the lander crashes, a scalar reward of (-100) is given  
+If the lander comes to rest, a scalar reward of (100) is given  
+Each leg with ground contact corresponds to a scalar reward of (10)  
+Firing the main engine corresponds to a scalar reward of (-0.3) per frame   
+Firing the side engines corresponds to a scalar reward of (-0.3) per frame   
 
 **Episode termination:**<br />
 Lander crashes  
