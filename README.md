@@ -58,12 +58,13 @@ Episode length > 400
 **Solved Requirement:**<br />
 Average reward of 200.0 over 100 consecutive trials
 
-# Deep Q-Network (DQN)
+# Deep Q-Learning framework
 <p align="center">
-  <img width="804" height="415" src="https://user-images.githubusercontent.com/79323290/109340337-cb6c5480-7860-11eb-9411-42b8e0d5941d.png">
+  <img width="804" height="415" src="https://user-images.githubusercontent.com/79323290/115233659-19d6fa80-a110-11eb-8c68-09d365a54676.png">
 </p>
-       
 
+# Deep Q-Network (DQN)
+       
 <table>
 <tr><th> Train </th><th> Test </th></tr>
 <tr><td>
@@ -103,9 +104,6 @@ Average reward of 200.0 over 100 consecutive trials
 > **Network model used for testing:** 'saved_networks/dqn_model104' ('tf' model, also available in .h5)  
 
 # Dueling DQN
-<p align="center">
-  <img width="804" height="415" src="https://user-images.githubusercontent.com/79323290/109340340-cc9d8180-7860-11eb-9011-1ea05ef7fc75.png">
-</p>
 
 <table>
 <tr><th> Train </th><th> Test </th></tr>
@@ -146,9 +144,6 @@ Average reward of 200.0 over 100 consecutive trials
 > **Network model used for testing:** 'saved_networks/duelingdqn_model123' ('tf' model, also available in .h5)  
 
 # Dueling Double DQN (D3QN)
-<p align="center">
-  <img width="804" height="415" src="https://user-images.githubusercontent.com/79323290/109341984-1e470b80-7863-11eb-9c5b-33a967d6bdd9.png">
-</p>
 
 <table>
 <tr><th> Train </th><th> Test </th></tr>
