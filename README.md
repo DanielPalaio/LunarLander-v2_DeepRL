@@ -3,7 +3,7 @@ Using Deep Q-Network (DQN), Dueling DQN, and Dueling Double DQN (D3QN)
 
 Investigation under the development of the master thesis "DeepRL-based Motion Planning for Indoor Mobile Robot Navigation" @ Institute of Systems and Robotics - University of Coimbra (ISR-UC)  
 
-# Software/Requirements
+## Software/Requirements
 Module | Software/Hardware
 ------------- | -------------
 Python IDE | Pycharm
@@ -17,14 +17,14 @@ Packages | requirements.txt
 **To import the required packages, [requirements.txt](DQN/requirements.txt), type the following instruction in the project environment terminal:**  
 > pip install -r requirements.txt
 
-# :warning: **WARNING** :warning:  
+## :warning: **WARNING** :warning:  
 The training generates a [.txt file](DQN/saved_networks.txt) that tracks the network models (in 'tf' and .h5 formats) that achieved the solved requirement of the environment. Additionally, an overview image (graph) of the training procedure is created.   
 Keep in mind that to perform several training processes, the .txt, .png, and directory names must be change. Otherwise, information of previous trainings will get overwritten, and lost.  
 
 Regarding testing, if you choose to load the .h5 model, a 5 episode training is done to initialize/build the keras.model network. Thus, the warnings above mentioned are also appliable to this situation.   
 Loading the saved model in 'tf' is the recommended option. After finishing the testing, an overview image (graph) of the training procedure is also generated.
 
-# OpenAI LunarLander-v2
+## OpenAI LunarLander-v2
 **Actions:**<br />
 0 - No action  
 1 - Fire left engine  
@@ -56,14 +56,9 @@ Lander comes to rest
 Episode length > 400  
 
 **Solved Requirement:**<br />
-Average reward of 200.0 over 100 consecutive trials
+Average reward of 200.0 over 100 consecutive trials  
 
-# Deep Q-Learning framework
-<p align="center">
-  <img width="804" height="415" src="https://user-images.githubusercontent.com/79323290/115233659-19d6fa80-a110-11eb-8c68-09d365a54676.png">
-</p>
-
-# Deep Q-Network (DQN)
+## Deep Q-Network (DQN)
        
 <table>
 <tr><th> Train </th><th> Test </th></tr>
@@ -103,7 +98,7 @@ Average reward of 200.0 over 100 consecutive trials
 
 > **Network model used for testing:** 'saved_networks/dqn_model104' ('tf' model, also available in .h5)  
 
-# Dueling DQN
+## Dueling DQN
 
 <table>
 <tr><th> Train </th><th> Test </th></tr>
@@ -143,7 +138,7 @@ Average reward of 200.0 over 100 consecutive trials
 
 > **Network model used for testing:** 'saved_networks/duelingdqn_model123' ('tf' model, also available in .h5)  
 
-# Dueling Double DQN (D3QN)
+## Dueling Double DQN (D3QN)
 
 <table>
 <tr><th> Train </th><th> Test </th></tr>
