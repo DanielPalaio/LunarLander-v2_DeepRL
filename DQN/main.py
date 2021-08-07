@@ -1,14 +1,39 @@
 
 
 from agent import Agent
+import numpy as np
 import gym
 
 
-env = gym.make("LunarLander-v2")
-spec = gym.spec("LunarLander-v2")
-train = 0
-test = 1
-num_episodes = 100
+class DiscreteActionSpaceWrapper(gym.Wrapper):
+    def __init__(self, environment):
+        action_space = environment.action_space
+        assert isinstance(action_space, gym.spaces.Box)
+
+        environment.action_space = gym.spaces.Discrete(4)
+        super(DiscreteActionSpaceWrapper, self).__init__(environment)
+
+    def step(self, discrete_action):
+        continuous_action = {
+            0: np.array([-1, 0]),
+            # 1: np.array([0.2, 0]),  # main 60%
+            # 2: np.array([0.6, 0]),  # main 80%
+            1: np.array([1, 0]),  # main 100%
+            # 4: np.array([-1, -0.75]),  # left 75%
+            2: np.array([-1, -1]),  # left 100%
+            # 6: np.array([-1, 0.75]),  # right 75%
+            3: np.array([-1, 1])  # right 100%
+        }[discrete_action]
+
+        obs, reward, done, info = self.envirnoment.step(continuous_action)
+        return obs, reward, done, info
+
+
+env = DiscreteActionSpaceWrapper(gym.make("LunarLanderContinuous-v2"))
+spec = gym.spec("LunarLanderContinuous-v2")
+train = 1
+test = 0
+num_episodes = 300
 graph = True
 
 file_type = 'tf'
